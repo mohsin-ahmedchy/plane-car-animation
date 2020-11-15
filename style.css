@@ -1,0 +1,67 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.sky,.green,.road{
+    position: relative;
+}
+
+.sky{
+    background: skyblue;
+    height: 40%;
+}
+
+.green{
+    height: 30%;
+    background: seagreen;
+}
+.road{
+    height: 30%;
+    background-color: slategray;
+    box-sizing: border-box;
+    border-top: 10px solid wheat;
+    border-bottom: 10px solid wheat;
+    width: 100%;
+}
+.road--line{
+    box-sizing: border-box;
+    border: 5px dashed wheat;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 0;
+}
+.plane{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    animation: red 4s ease 15s infinite;
+}
+
+.car1{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    animation: red 4s ease-out 10s infinite;
+}
+
+.car2{
+    position: absolute;
+    top: 140px;
+    left: 0;
+    animation: red 4s ease-in-out 20s infinite;
+}
+
+@keyframes red{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(1500px);
+    }
+}
